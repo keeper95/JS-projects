@@ -36,5 +36,3 @@ const actuallyWorkingTime = actuallyWorkingDays * hoursPerDay,
     salaryPerTask = salaryPerHour * actuallyWorkingTime;
     
 console.log(enoughTime + ' Salary for this task: ' + salaryPerTask);
-
-    
