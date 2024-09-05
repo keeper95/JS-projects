@@ -36,3 +36,37 @@ const actuallyWorkingTime = actuallyWorkingDays * hoursPerDay,
     salaryPerTask = salaryPerHour * actuallyWorkingTime;
     
 console.log(enoughTime + ' Salary for this task: ' + salaryPerTask);
+
+//task 2
+
+let money = 12000;
+let housePrice = 13500;
+let rate = 7;
+
+rate = 7 / 100;
+
+depositBalance = money * (1 + rate / 12) ** 24;
+
+if (depositBalance > housePrice){
+    console.log('You have enough money for buying house');
+} else {
+    console.log('Not enough money!')
+}
+console.log(depositBalance - housePrice);
+
+// switch 
+
+let role = 'Manager';
+
+switch (role) {
+    case 'Manager':
+            console.log("Manager")
+        break;
+    case "Administrator":
+            console.log("Administrator")
+        break;
+
+    default:
+        console.log("Who are you?")
+        break;
+}
