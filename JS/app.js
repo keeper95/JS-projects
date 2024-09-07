@@ -70,3 +70,20 @@ switch (role) {
         console.log("Who are you?")
         break;
 }
+
+// task 3 
+
+let scanner = prompt('7 + 15?');
+
+if (scanner === 22) {
+    console.log('Correct!');
+} else {
+    console.log('Incorrect');
+}
+
+const isAdmin = true;
+const canWrite = true;
+
+console.log(`System file  ${isAdmin && canWrite}`); //boolean and
+console.log(`Common file  ${isAdmin || canWrite}`); // boolean or
+console.log(`Invert admin rules  ${!isAdmin}`); // boolean not
