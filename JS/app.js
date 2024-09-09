@@ -87,3 +87,17 @@ const canWrite = true;
 console.log(`System file  ${isAdmin && canWrite}`); //boolean and
 console.log(`Common file  ${isAdmin || canWrite}`); // boolean or
 console.log(`Invert admin rules  ${!isAdmin}`); // boolean not
+
+//task 4
+
+const gamerBalance = 1200;
+const gamerBonus = 100;
+const isBanned = false;
+const isExist = false;
+const isSelling = true;
+
+const canBuy = (gamerBalance > 1000 || gamerBonus > 100) && !isBanned && !isExist && isSelling;
+
+console.log(`Can I buy this game: ${canBuy ? 'Yes' : 'No'}`);
+
+
