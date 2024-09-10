@@ -100,4 +100,70 @@ const canBuy = (gamerBalance > 1000 || gamerBonus > 100) && !isBanned && !isExis
 
 console.log(`Can I buy this game: ${canBuy ? 'Yes' : 'No'}`);
 
+// functions 
 
+const KG_IN_USD = 7;
+const KM_IN_USD = 5;
+
+function calculateW(present) {
+    return present * KG_IN_USD;
+}
+
+function calculateKM (distance){
+    return distance * KM_IN_USD;
+}
+
+function totalPrice (deliveryPresent, deliveryPresent1, distance){
+    const priceOfFirstPresent = calculateW(deliveryPresent);
+    const priceOfSecondPresent = calculateW(deliveryPresent1);
+    const distancePrice = calculateKM(distance);
+    return priceOfFirstPresent + priceOfSecondPresent + distancePrice;
+}
+
+console.log(totalPrice(1, 2, 10));
+
+//task 5 (arrow function)
+
+const toPowerArrow = (num, power) => num ** power;
+
+console.log(toPowerArrow(2, 2));
+
+// task 6
+
+function checkUserAge(userAge){
+    if(userAge > 24){
+        return true;
+    } return false;
+}
+
+function checkUserHaveWork (userWork){
+    if(userWork = true){
+        return true;
+    } return false;
+}
+
+function checkUserAmountMoney (userMoneyIsEnough){
+    if(userMoneyIsEnough >= 2000){
+        return true;
+    } return false;
+}
+
+function checkUserAbylityToBuy(age, work, money) {
+    const userRealAge = checkUserAge(age);
+    const userRealWork = checkUserHaveWork(work);
+    const userRealAmountOfMoney = checkUserAmountMoney(money);
+
+    if(userRealAge && userRealWork === true){
+        money + 500;
+    } else return false;
+
+    if (userRealAge > 24 && userRealWork === false){
+        money + 100;
+    } else return false;
+
+    if(userRealAmountOfMoney >= 2000){
+        return true;
+    } else return false;
+}
+
+console.log(checkUserAbylityToBuy(24, true, 2000));
