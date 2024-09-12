@@ -167,3 +167,35 @@ function checkUserAbylityToBuy(age, work, money) {
 }
 
 console.log(checkUserAbylityToBuy(24, true, 2000));
+
+
+//task 7 
+
+const tasks = [`task 1`];
+
+function addToTheEnd (theEndOfArray){
+    
+    theEndOfArray = tasks.push(`task 2`);
+    return tasks;
+}
+
+function deleteElementByName(elementName) {
+    
+    const index = tasks.indexOf(elementName);  
+    
+    if (index !== -1) {
+        tasks.splice(index, 1);  
+    }
+    return tasks;
+}
+
+function addToTheStart (theEndOfArray){
+    
+    theEndOfArray = tasks.unshift(`task 33`);
+    return tasks;
+}
+
+
+console.log(addToTheEnd());  
+console.log(deleteElementByName('task 2'));  
+console.log(addToTheStart());
