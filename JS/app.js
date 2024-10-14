@@ -199,3 +199,25 @@ function addToTheStart (theEndOfArray){
 console.log(addToTheEnd());  
 console.log(deleteElementByName('task 2'));  
 console.log(addToTheStart());
+
+
+//task 8
+
+const url = `https://www.youtube.com/watch?v=ReMhi8mue1g`;
+
+const protocol = url.slice(0, 5);
+const link = url.slice(12, 23);
+const insideLink = url.slice(24, 43);
+
+console.log(protocol);
+console.log(link);
+console.log(insideLink);
+
+// task 9 
+
+
+const jsArray = [`!`, `js`, `like`, `I`];
+
+for (let i = jsArray.lengt - 1;  i >= 0; i--){
+    console.log(jsArray[i]);
+} 

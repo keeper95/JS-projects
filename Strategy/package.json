@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "axios": "^1.7.7",
+    "ccxt": "^4.4.14",
+    "dotenv": "^16.4.5",
+    "node-binance-api": "^0.13.1",
+    "technicalindicators": "^3.1.0"
+  },
+  "name": "strategy",
+  "version": "1.0.0",
+  "main": "TestStrategy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
